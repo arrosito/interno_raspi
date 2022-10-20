@@ -237,6 +237,7 @@ while True:
 		# threshold, and if so, increment the blink frame counter
 		if ear < EYE_AR_THRESH:
 			now =  dt.datetime.now()
+			print("reconozco")
 			if (now - start).total_seconds() > 1.5 and (now - start).total_seconds() < 3:
 				TOTAL += 1
 				#frame2=img_ventanilla
